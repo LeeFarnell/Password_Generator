@@ -30,6 +30,10 @@ const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
 const specials = ['!', '\"', '#', '$', '%', '&', '\'', '()', '*', '+', ',', '-', '.', '/', ':', ';' '\<', '=', '>', '?', '@' '\[', '\\', ']', '^', '_', '`', '{', '|', '}', '~', '\"']
 
 // Length Validation Prompt: no less than 8, no more than 128. Alert if not true.
+const validateLength = function () {
+
+};
+
 length = prompt("How long would you like your password to be? Please select a number between 8 - 128")
 // Confirm if Lowercase wanted
 // Confirm if Uppercase wanted
