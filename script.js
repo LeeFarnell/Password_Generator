@@ -123,6 +123,11 @@ function generatePassword() {
   const confirmUpper = confirm(
     "Do you want to use any uppercase characters? Press 'OK' for yes, 'Cancel' for no."
   );
+  if (confirmUpper == true) {
+    console.log("True");
+  } else {
+    console.log("False");
+  }
   // Confirm if Numbers wanted
   const confirmNumber = confirm(
     "Do you want to use any numbers? Press 'OK' for yes, 'Cancel' for no."
