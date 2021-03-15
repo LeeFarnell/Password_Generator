@@ -102,6 +102,13 @@ function generatePassword() {
   const passwordLength = prompt(
     "How long would you like your password to be? Please insert a number between 8-128."
   );
+  if (passwordLength >= 8 && passwordLength <= 128) {
+    console.log("True");
+  } else {
+    alert("Number Invalid. Please insert a number between 8-128.");
+    console.log("false");
+    break;
+  }
 
   // Confirm if Lowercase wanted
   const confirmLower = confirm(
