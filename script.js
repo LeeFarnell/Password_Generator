@@ -106,14 +106,19 @@ function generatePassword() {
     console.log("True");
   } else {
     alert("Number Invalid. Please insert a number between 8-128.");
-    console.log("false");
-    break;
+    console.log("False");
+    return;
   }
 
   // Confirm if Lowercase wanted
   const confirmLower = confirm(
     "Do you want to use any lowercase characters? Press 'OK' for yes, 'Cancel' for no."
   );
+  if (confirmLower == true) {
+    console.log("True");
+  } else {
+    console.log("False");
+  }
   // Confirm if Uppercase wanted
   const confirmUpper = confirm(
     "Do you want to use any uppercase characters? Press 'OK' for yes, 'Cancel' for no."
