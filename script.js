@@ -132,6 +132,11 @@ function generatePassword() {
   const confirmNumber = confirm(
     "Do you want to use any numbers? Press 'OK' for yes, 'Cancel' for no."
   );
+  if (confirmNumber == true) {
+    console.log("True");
+  } else {
+    console.log("False");
+  }
   // Confirm if special characters wanted
   const confirmSpecial = confirm(
     "Do you want to use any special characters? Press 'OK' for yes, 'Cancel' for no."
