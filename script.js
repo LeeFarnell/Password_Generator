@@ -102,6 +102,10 @@ function generatePassword() {
   const passwordLength = prompt(
     "How long would you like your password to be? Please insert a number between 8-128."
   );
+  // Before if convert string to number Number.parseInt() and store in new variable.
+  // Put confirm statements within this IF block.
+  // Generate password after Confirm statements and If Block.
+  // Create Options Arrays.
   if (passwordLength >= 8 && passwordLength <= 128) {
     console.log(passwordLength);
   } else {
