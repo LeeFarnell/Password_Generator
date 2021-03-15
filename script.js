@@ -141,6 +141,11 @@ function generatePassword() {
   const confirmSpecial = confirm(
     "Do you want to use any special characters? Press 'OK' for yes, 'Cancel' for no."
   );
+  if (confirmSpecial == true) {
+    console.log("True");
+  } else {
+    console.log("False");
+  }
   // Alert if all false.
 
   // Return our created password
