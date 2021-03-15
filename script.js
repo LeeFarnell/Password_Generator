@@ -147,6 +147,15 @@ function generatePassword() {
     console.log("False");
   }
   // Alert if all false.
+  if (
+    confirmLower == false &&
+    confirmUpper == false &&
+    confirmNumber == false &&
+    confirmSpecial == false
+  ) {
+    alert("You must select at least one of the character types.");
+    console.log("Try again");
+  }
 
   // Return our created password
   return password;
