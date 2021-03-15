@@ -157,6 +157,22 @@ function generatePassword() {
     console.log("Try again");
   }
 
+  // If Lower is True and all others are false
+  // If Upper is True and all others are false
+  // If Numbers is True and all others are false
+  // If Special is True and all others are false
+  // If Lower/Upper is true
+  // If Lower/Number is true
+  // If Lower/Special is true
+  // If Upper/Number is true
+  // If Upper/Special is true
+  // If Number/Special is true
+  // If Lower/Upper/Number is true
+  // If Lower/Upper/Special is true
+  // If Lower/Number/Special is true
+  // If Upper/Number/Special is true
+  // If ALL are true
+
   // Return our created password
   return password;
 }
