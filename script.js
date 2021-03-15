@@ -104,13 +104,21 @@ function generatePassword() {
   );
 
   // Confirm if Lowercase wanted
-  const confirmLower = confirm("Do you want to use any lowercase characters?");
+  const confirmLower = confirm(
+    "Do you want to use any lowercase characters? Press 'Okay' for yes, 'Cancel' for no."
+  );
   // Confirm if Uppercase wanted
-  const confirmUpper = confirm("Do you want to use any uppercase characters?");
+  const confirmUpper = confirm(
+    "Do you want to use any uppercase characters? Press 'Okay' for yes, 'Cancel' for no."
+  );
   // Confirm if Numbers wanted
-  const confirmNumber = confirm("Do you want to use any numbers?");
+  const confirmNumber = confirm(
+    "Do you want to use any numbers? Press 'Okay' for yes, 'Cancel' for no."
+  );
   // Confirm if special characters wanted
-  const confirmSpecial = confirm("Do you want to use any special characters?");
+  const confirmSpecial = confirm(
+    "Do you want to use any special characters? Press 'Okay' for yes, 'Cancel' for no."
+  );
   // Alert if all false.
 
   // Return our created password
