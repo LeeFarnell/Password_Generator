@@ -99,11 +99,12 @@ function generatePassword() {
 
   // Logic would go here
   // Length Validation Prompt: no less than 8, no more than 128. Alert if not true.
-  const Length = prompt(
+  const passwordLength = prompt(
     "How long would you like your password to be? Please insert a number between 8-128."
   );
 
   // Confirm if Lowercase wanted
+  const confirmLower = confirm("Do you want to use any lowercase characters?");
   // Confirm if Uppercase wanted
   // Confirm if Numbers wanted
   // Confirm if special characters wanted
