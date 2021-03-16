@@ -103,10 +103,11 @@ function generatePassword() {
     "How long would you like your password to be? Please insert a number between 8-128."
   );
   // Before if convert string to number Number.parseInt() and store in new variable.
+  const passwordParsed = Number.parseInt(passwordLength);
   // Put confirm statements within this IF block.
   // Generate password after Confirm statements and If Block.
   // Create Options Arrays.
-  if (passwordLength >= 8 && passwordLength <= 128) {
+  if (passwordParsed >= 8 && passwordParsed <= 128) {
     console.log(passwordLength);
   } else {
     alert("Number Invalid. Please insert a number between 8-128.");
