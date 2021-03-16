@@ -187,6 +187,7 @@ function generatePassword() {
     const result = randomGenerator();
     console.log(result);
   }
+  //  Put result into a new array
 
   // Return our created password
   return password;
