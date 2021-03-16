@@ -184,8 +184,8 @@ function generatePassword() {
 
   // Loop function
   for (let i = 0; i < passwordParsed; i++) {
-    const password = randomGenerator();
-    console.log(password);
+    const result = randomGenerator();
+    console.log(result);
   }
 
   // Return our created password
