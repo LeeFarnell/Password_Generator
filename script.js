@@ -63,7 +63,8 @@ const specials = [
   "%",
   "&",
   "'",
-  "()",
+  "(",
+  ")",
   "*",
   "+",
   ",",
@@ -183,11 +184,12 @@ function generatePassword() {
 
   // Loop function
   for (let i = 0; i < passwordParsed; i++) {
-    console.log(randomGenerator());
+    const password = randomGenerator();
+    console.log(password);
   }
 
   // Return our created password
-  // return password;
+  return password;
 }
 // Write password to the #password input
 function writePassword() {
