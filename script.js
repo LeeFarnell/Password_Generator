@@ -178,9 +178,20 @@ function generatePassword() {
     return randomChoice;
     }
 	// Select random number from chosen array.
-	
+	function (){
+
+	}
+
 	// Get random character from that array.
+function () {
+
+}
+
 	// Repeat until length matches passwordParsed
+
+	for (){
+		
+	}
 
   // Return our created password
   return password;
