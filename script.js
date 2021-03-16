@@ -167,6 +167,12 @@ function generatePassword() {
 
   // Generate password after Confirm statements and If Block.
 
+	// Select Random Index from combinedArray
+	// Get that array from combinedArray
+	// Select random number from chosen array.
+	// Get random character from that array.
+	// Repeat until length matches passwordParsed
+
   // Return our created password
   return password;
 }
