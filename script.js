@@ -180,7 +180,11 @@ function generatePassword() {
     const randomChoice = combinedArray[randomIndex];
     return randomChoice;
   }
-  console.log(randomGenerator());
+
+  // Loop function
+  for (let i = 0; i < passwordParsed; i++) {
+    console.log(randomGenerator());
+  }
 
   // Return our created password
   // return password;
