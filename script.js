@@ -90,6 +90,8 @@ const specials = [
   '"',
 ];
 
+const combinedArray [];
+
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
@@ -144,16 +146,19 @@ function generatePassword() {
     } else {
       console.log("False");
     }
-    // Alert if all false.
-    if (
-      confirmLower == false &&
-      confirmUpper == false &&
-      confirmNumber == false &&
-      confirmSpecial == false
-    ) {
-      alert("You must select at least one of the character types.");
-      console.log("Try again");
-    }
+    // Push options to combined array.
+		if (confirmLower) {
+			combinedArray.push (lowercase)
+			} if (confirmUpper) {
+			combinedArray.push (uppercase)
+			} if (confirmNumber) {
+			combinedArray.push (numbers)
+			} if (confirmSpecial) {
+			combinedArray.push (specials)
+			} if (!confirmLower && !confirmUpper && !confirmNumber && !confirmSpecial) {
+				alert("You must select at least one of the character types.");
+				console.log("Try again");
+			}
   } else {
     alert("Number Invalid. Please insert a number between 8-128.");
     console.log("False");
@@ -161,23 +166,6 @@ function generatePassword() {
   }
 
   // Generate password after Confirm statements and If Block.
-  // Create Options Arrays.
-
-  // If Lower is True and all others are false
-  // If Upper is True and all others are false
-  // If Numbers is True and all others are false
-  // If Special is True and all others are false
-  // If Lower/Upper is true
-  // If Lower/Number is true
-  // If Lower/Special is true
-  // If Upper/Number is true
-  // If Upper/Special is true
-  // If Number/Special is true
-  // If Lower/Upper/Number is true
-  // If Lower/Upper/Special is true
-  // If Lower/Number/Special is true
-  // If Upper/Number/Special is true
-  // If ALL are true
 
   // Return our created password
   return password;
