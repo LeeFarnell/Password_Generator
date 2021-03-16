@@ -90,97 +90,89 @@ const specials = [
   '"',
 ];
 
-const combinedArray [];
+const combinedArray = [];
 
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
+// Declare a new function on line 3
 function generatePassword() {
   // Create a variable to store our generated password
   var password = "";
 
   // Logic would go here
-  // Length Validation Prompt: no less than 8, no more than 128. Alert if not true.
+  // Length Validation Prompt.
   const passwordLength = prompt(
     "How long would you like your password to be? Please insert a number between 8-128."
   );
-  // Before if convert string to number Number.parseInt() and store in new variable.
+  // Converting string to number and store in new variable.
   const passwordParsed = Number.parseInt(passwordLength);
-  // Put confirm statements within this IF block.
-
+  // If block containing Confirms
   if (passwordParsed >= 8 && passwordParsed <= 128) {
     console.log(passwordParsed);
     // Confirm if Lowercase wanted
     const confirmLower = confirm(
       "Do you want to use any lowercase characters? Press 'OK' for yes, 'Cancel' for no."
     );
-    if (confirmLower == true) {
+    if (confirmLower === true) {
       console.log("True");
     } else {
       console.log("False");
     }
+
     // Confirm if Uppercase wanted
     const confirmUpper = confirm(
       "Do you want to use any uppercase characters? Press 'OK' for yes, 'Cancel' for no."
     );
-    if (confirmUpper == true) {
+    if (confirmUpper === true) {
       console.log("True");
     } else {
       console.log("False");
     }
+
     // Confirm if Numbers wanted
     const confirmNumber = confirm(
       "Do you want to use any numbers? Press 'OK' for yes, 'Cancel' for no."
     );
-    if (confirmNumber == true) {
+    if (confirmNumber === true) {
       console.log("True");
     } else {
       console.log("False");
     }
+
     // Confirm if special characters wanted
     const confirmSpecial = confirm(
       "Do you want to use any special characters? Press 'OK' for yes, 'Cancel' for no."
     );
-    if (confirmSpecial == true) {
+    if (confirmSpecial === true) {
       console.log("True");
     } else {
       console.log("False");
     }
+
     // Push options to combined array.
-		if (confirmLower) {
-			combinedArray.push (...lowercase)
-			} if (confirmUpper) {
-			combinedArray.push (...uppercase)
-			} if (confirmNumber) {
-			combinedArray.push (...numbers)
-			} if (confirmSpecial) {
-			combinedArray.push (...specials)
-			} if (!confirmLower && !confirmUpper && !confirmNumber && !confirmSpecial) {
-				alert("You must select at least one of the character types.");
-				console.log("Try again");
-			}
+    if (confirmLower) {
+      combinedArray.push(...lowercase);
+    }
+    if (confirmUpper) {
+      combinedArray.push(...uppercase);
+    }
+    if (confirmNumber) {
+      combinedArray.push(...numbers);
+    }
+    if (confirmSpecial) {
+      combinedArray.push(...specials);
+    }
+
+    if (!confirmLower && !confirmUpper && !confirmNumber && !confirmSpecial) {
+      alert("You must select at least one of the character types.");
+      console.log("Try again");
+    }
   } else {
     alert("Number Invalid. Please insert a number between 8-128.");
     console.log("False");
     return;
   }
-
-  // Generate password after Confirm statements and If Block.
-
-	// Select Random Index from combinedArray
-
-	// Get that array from combinedArray
-	const randomGenerator = function () {
-    const randomIndex = Math.floor(Math.random()*combinedArray.length);
-    const randomChoice = combinedArray[randomIndex];
-    return randomChoice;
-    }
-
-	// Repeat until length matches passwordParsed
-
-	for (){
-		
-	}
 
   // Return our created password
   return password;
