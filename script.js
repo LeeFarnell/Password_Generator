@@ -168,10 +168,17 @@ function generatePassword() {
   // Generate password after Confirm statements and If Block.
 
 	// Select Random Index from combinedArray
-	const options = combinedArray.toString();
+	// not sure if below is correct
+	const options = combinedArray.toString(); 
 
 	// Get that array from combinedArray
+	const randomGenerator = function () {
+    const randomIndex = Math.floor(Math.random()*combinedArray.length);
+    const randomChoice = combinedArray[randomIndex];
+    return randomChoice;
+    }
 	// Select random number from chosen array.
+	
 	// Get random character from that array.
 	// Repeat until length matches passwordParsed
 
