@@ -148,13 +148,13 @@ function generatePassword() {
     }
     // Push options to combined array.
 		if (confirmLower) {
-			combinedArray.push (lowercase)
+			combinedArray.push (...lowercase)
 			} if (confirmUpper) {
-			combinedArray.push (uppercase)
+			combinedArray.push (...uppercase)
 			} if (confirmNumber) {
-			combinedArray.push (numbers)
+			combinedArray.push (...numbers)
 			} if (confirmSpecial) {
-			combinedArray.push (specials)
+			combinedArray.push (...specials)
 			} if (!confirmLower && !confirmUpper && !confirmNumber && !confirmSpecial) {
 				alert("You must select at least one of the character types.");
 				console.log("Try again");
@@ -168,8 +168,6 @@ function generatePassword() {
   // Generate password after Confirm statements and If Block.
 
 	// Select Random Index from combinedArray
-	// not sure if below is correct
-	const options = combinedArray.toString(); 
 
 	// Get that array from combinedArray
 	const randomGenerator = function () {
@@ -177,15 +175,6 @@ function generatePassword() {
     const randomChoice = combinedArray[randomIndex];
     return randomChoice;
     }
-	// Select random number from chosen array.
-	function (){
-
-	}
-
-	// Get random character from that array.
-function () {
-
-}
 
 	// Repeat until length matches passwordParsed
 
