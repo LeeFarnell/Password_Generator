@@ -174,8 +174,16 @@ function generatePassword() {
     return;
   }
 
+  // Get that array from combinedArray
+  function randomGenerator() {
+    const randomIndex = Math.floor(Math.random() * combinedArray.length);
+    const randomChoice = combinedArray[randomIndex];
+    return randomChoice;
+  }
+  console.log(randomGenerator());
+
   // Return our created password
-  return password;
+  // return password;
 }
 // Write password to the #password input
 function writePassword() {
