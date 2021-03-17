@@ -176,6 +176,8 @@ function generatePassword() {
     return;
   }
 
+  console.log(combinedArray);
+
   // Get that array from combinedArray
   function randomGenerator() {
     const randomIndex = Math.floor(Math.random() * combinedArray.length);
@@ -188,8 +190,11 @@ function generatePassword() {
     let randomResult = randomGenerator();
     result.push(randomResult);
   }
+
+  console.log(result);
+
   //  Put result into a new array
-  password = result;
+  password = result.join("");
 
   // Return our created password
   return password;
