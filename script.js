@@ -92,6 +92,7 @@ const specials = [
 ];
 
 const combinedArray = [];
+let result;
 
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
@@ -184,10 +185,11 @@ function generatePassword() {
 
   // Loop function
   for (let i = 0; i < passwordParsed; i++) {
-    const result = randomGenerator();
+    result = randomGenerator();
     console.log(result);
   }
   //  Put result into a new array
+  password = result;
 
   // Return our created password
   return password;
