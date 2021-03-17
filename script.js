@@ -91,16 +91,15 @@ const specials = [
   '"',
 ];
 
-const combinedArray = [];
-let result = [];
-
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
 // Declare a new function on line 3
 function generatePassword() {
   // Create a variable to store our generated password
-  var password = "";
+  let password = "";
+  const combinedArray = [];
+  const result = [];
 
   // Logic would go here
   // Length Validation Prompt.
