@@ -110,46 +110,23 @@ function generatePassword() {
   const passwordParsed = Number.parseInt(passwordLength);
   // If block containing Confirms
   if (passwordParsed >= 8 && passwordParsed <= 128) {
-    console.log(passwordParsed);
     // Confirm if Lowercase wanted
     const confirmLower = confirm(
       "Do you want to use any lowercase characters? Press 'OK' for yes, 'Cancel' for no."
     );
-    if (confirmLower === true) {
-      console.log("True");
-    } else {
-      console.log("False");
-    }
-
     // Confirm if Uppercase wanted
     const confirmUpper = confirm(
       "Do you want to use any uppercase characters? Press 'OK' for yes, 'Cancel' for no."
     );
-    if (confirmUpper === true) {
-      console.log("True");
-    } else {
-      console.log("False");
-    }
-
     // Confirm if Numbers wanted
     const confirmNumber = confirm(
       "Do you want to use any numbers? Press 'OK' for yes, 'Cancel' for no."
     );
-    if (confirmNumber === true) {
-      console.log("True");
-    } else {
-      console.log("False");
-    }
 
     // Confirm if special characters wanted
     const confirmSpecial = confirm(
       "Do you want to use any special characters? Press 'OK' for yes, 'Cancel' for no."
     );
-    if (confirmSpecial === true) {
-      console.log("True");
-    } else {
-      console.log("False");
-    }
 
     // Push options to combined array.
     if (confirmLower) {
@@ -175,8 +152,6 @@ function generatePassword() {
     return;
   }
 
-  console.log(combinedArray);
-
   // Get that array from combinedArray
   function randomGenerator() {
     const randomIndex = Math.floor(Math.random() * combinedArray.length);
@@ -189,9 +164,6 @@ function generatePassword() {
     let randomResult = randomGenerator();
     result.push(randomResult);
   }
-
-  console.log(result);
-
   //  Put result into a new array
   password = result.join("");
 
