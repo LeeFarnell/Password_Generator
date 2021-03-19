@@ -94,19 +94,18 @@ const specials = [
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
-// Declare a new function on line 3
+// Generate Password Function
 function generatePassword() {
-  // Create a variable to store our generated password
+  // Function Variables
   let password = "";
   const combinedArray = [];
   const result = [];
 
-  // Logic would go here
   // Length Validation Prompt.
   const passwordLength = prompt(
     "How long would you like your password to be? Please insert a number between 8-128."
   );
-  // Converting string to number and store in new variable.
+  // String to Number Conversion
   const passwordParsed = Number.parseInt(passwordLength);
   // If block containing Confirms
   if (passwordParsed >= 8 && passwordParsed <= 128) {
@@ -152,7 +151,7 @@ function generatePassword() {
     return;
   }
 
-  // Get that array from combinedArray
+  // Random Generator
   function randomGenerator() {
     const randomIndex = Math.floor(Math.random() * combinedArray.length);
     const randomChoice = combinedArray[randomIndex];
@@ -164,10 +163,8 @@ function generatePassword() {
     let randomResult = randomGenerator();
     result.push(randomResult);
   }
-  //  Put result into a new array
-  password = result.join("");
-
   // Return our created password
+  password = result.join("");
   return password;
 }
 // Write password to the #password input
@@ -178,5 +175,5 @@ function writePassword() {
   passwordText.value = password;
 }
 
-// Add event listener to generate button
+// Event listener to generate button
 generateBtn.addEventListener("click", writePassword);
