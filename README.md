@@ -20,3 +20,5 @@ https://leefarnell.github.io/Password_Generator/
 
 ![Screenshot1](Screenshots/PasswordGen%20Screenshot1.png)
 ![Screenshot2](Screenshots/PasswordGen%20Screenshot2.png)
+![Screenshot3](Screenshots/PasswordGen%20Screenshot3.png)
+![Screenshot4](Screenshots/PasswordGen%20Screenshot4.png)
