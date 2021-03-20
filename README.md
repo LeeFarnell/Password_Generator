@@ -8,6 +8,10 @@ As part of the Coding Bootcamp, I was given a preset HTML and CSS page and it wa
 - Return the result of the generator back to the given box on the web page.
 - Ensuring the function works correctly without any errors showing in the console log.
 
+Whilst the password generator works functionally without any errors, I have spotted some potential flaws with the generator. For instance, if the user selects an 8 character password but wants to use all the options given (ie uppercase, lowercase, numbers and specials), there is a small chance that the user may not get one of selected characters.
+
+I understand this comes down to statistics and the way I have set up the combined array, so for future reference, I'll be able to research different methods on how I could resolve this issue.
+
 ## Link to Deployed Application
 
 https://leefarnell.github.io/Password_Generator/
